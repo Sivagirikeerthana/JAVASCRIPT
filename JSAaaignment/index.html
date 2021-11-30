@@ -1,0 +1,80 @@
+<html>
+  <center><h1>Submit your application</h1></center>
+<center><p>for <b>.NET Developer (fresher)</b></p></center>
+  <head>
+    <link rel="stylesheet" href="style/style.css">
+     <script href="script/script.js"></script> 
+    </head>
+    <body>
+        <h1>Personal information</h1><br>
+        <form>
+        Name as per ID proof *<br>
+        <input type="text" id="name" ><br>
+        <label id="lb1" style="visibility: hidden;">Invalid name</label><br>
+        <label id="lb11" style="color:red" style="visibility: hidden;"></label>
+        Father's name*<br>
+        <input type="text" id="fname"><br>
+        <label id="lb2" style="visibility: hidden;"></label>
+        <label id="lb22"  style="color: red" style="visibility: hidden;" ></label>
+        E-mail*<br>
+         <input type="text" id="mail"><br>
+         <label id="lb3" style="visibility: hidden;">Invalid mailId</label>
+         <label id="lb33" style="color: red;" style="visibility: hidden;"></label>
+         Date of birth*<br>
+         <input type="text" id="dob" ><br>
+         <label id="lb4" style="visibility:hidden;">Invalid date</label>
+         <label id="lb44" style="visibility: hidden;" style="color: red;"></label>
+         Mobile Number*<br>
+         <input type="number" id="phnum"><br>
+         <label id="lb5" style="visibility: hidden;"></label>
+         <label id="lb55" style="visibility: hidden; " style="color: red;"></label>
+         <div id="current">
+         Current Address*<br>
+         <input type="text" id="address" placeholder="address line 1"><br>
+         <label id="lb6" style="visibility: hidden;">Invalid address</label><br>
+         <label id="lb66" style="color: red;" style="visibility:hidden;"></label>
+         <input type="number" id="pin" placeholder="pin" ><br>
+         <label id="ib8" style="visibility: hidden;">Invalid pin</label><br>
+         <label id="ib88" style="visibility: hidden;" style="color: red;"></label>
+         <!-- Addressline2 -->
+         <input type="text" id="addreass2" placeholder="Address line 2"><br><br>
+         <input type="text" id="city"  placeholder="city"><br>
+         <label id="ib9" style="visibility: hidden;">Invalid city</label>
+         <label id="ib99" style="visibility: hidden;" style="color: red;"></label>
+         <!-- states -->
+         <select name="states" id="state" placeholder="select state"><br>
+           <option value="Andhra Pradesh">Andhra Pradesh</option>
+           <option value="Tamilanadu">Tamil Nadu</option>
+           <option value="Telangana">Telangana</option>
+           <option value="kerala">kerala</option>
+         </select>
+         
+        </div><br>
+        <!-- checkbox -->
+        <input type="checkbox" id="tick" onclick="fill()" name="checkbox">same as current address<br>
+        Perment Address*<br>
+        <input type="text" id="address" placeholder="address line 1"><br>
+        <label id="lb6" style="visibility: hidden;"></label><br>
+        <label id="lb66" style="color: red;" style="visibility: hidden;"></label>
+        <input type="number" id="pin" placeholder="pin" ><br>
+        <label id="ib8" style="visibility: hidden;">Invalid pin</label>
+        <label id="ib88" style="visibility: hidden;" style="color: red;"></label>
+        <!-- Addressline2 -->
+    <input type="text" id="addreass2" placeholder="Address line 2"><br>
+        <input type="text" id="city"  placeholder="city"><br><br>
+        <label id="ib9" style="visibility: hidden;">Invalid city</label>
+         <label id="ib99" style="visibility: hidden;" style="color: red;"></label>
+        <!-- states -->
+        <select name="states" id="state" placeholder="select state">
+          <option value="Andhra Pradesh">Andhra Pradesh</option><br>
+          <option value="Tamilanadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="kerala">kerala</option>
+          <br> <br>
+          <!-- uploading CV --><br>
+          <input type="file" name="file" id="upload""><br><br>
+      <!-- button -->
+      <button  onclick="validation()" type="button" id="submit">validation</button>
+    </form>
+    </body>
+</html>
